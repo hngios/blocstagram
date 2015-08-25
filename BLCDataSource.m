@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 BLC. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "BLCDataSource.h"
 #import "BLCUser.h"
 #import "BLCMedia.h"
@@ -41,7 +42,7 @@
 - (void) addRandomData {
     NSMutableArray *randomMediaItems = [NSMutableArray array];
     
-    for (int i = 1; i <= 10; i++) {
+    for (int i = 1; i <= 7; i++) {
         NSString *imageName = [NSString stringWithFormat:@"%d.jpg", i];
         UIImage *image = [UIImage imageNamed:imageName];
         
