@@ -19,13 +19,13 @@
 @end
 
 @implementation BLCDataSource
+static id sharedInstance = nil;
 
++(void)initialize {
+    if (self == [BLCDataSource class])
+        sharedInstance = [[BLCDataSource alloc] init];
+}
 + (instancetype) sharedInstance {
-    static dispatch_once_t once;
-    static id sharedInstance;
-    dispatch_once(&once, ^{
-        sharedInstance = [[self alloc] init];
-    });
     return sharedInstance;
 }
 
