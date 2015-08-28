@@ -65,7 +65,7 @@
         }
     }
     
-    self.mediaItems = randomMediaItems;
+    [BLCDataSource sharedInstance].mediaItems = randomMediaItems;
 }
 - (BLCUser *) randomUser {
     BLCUser *user = [[BLCUser alloc] init];

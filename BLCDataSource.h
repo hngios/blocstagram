@@ -11,7 +11,7 @@
 @interface BLCDataSource : NSObject
 
 + (instancetype) sharedInstance;
-@property (nonatomic, strong) NSArray *mediaItems;
+@property (nonatomic, strong) NSMutableArray *mediaItems;
 
 
 @end
